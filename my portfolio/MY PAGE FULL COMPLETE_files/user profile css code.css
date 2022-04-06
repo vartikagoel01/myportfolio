@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+    }
+    body
+    {
+        background-color: darkolivegreen;
+    }
+    .sidebar{
+        position: fixed;
+        left: -200px;
+        width:  200px;
+        height:  100%;
+        background: black;
+        transition: all .5s ease;
+    }  
+    .sidebar header{
+        color: white;
+        font-size: 28px;
+        line-height: 70px;
+        text-align: center;
+        font-family: sans-serif;
+        user-select: none;
+    }
+    .sidebar a{
+        display: block;
+        color: white;
+        height: 65px;
+        width: 100%;
+        line-height: 65px;
+        padding-left: 30px;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        border-left: 5px solid transparent;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        transition: all .5s ease;
+    }
+    .sidebar a:hover
+    {
+        border-left: 5px solid green;
+        color: green;
+    }
+    .sidebar a:active{
+        border-left: 5px solid green;
+        color: green;
+    }
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: black;
+        height: 45px;
+        width: 45px;
+        margin: 10px 10px;
+        text-align: center;
+        line-height: 40px;
+        color: whitesmoke;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid;
+        transition: all .5s ease;
+        }
+        label #cancel{
+            opacity: 0;
+            visibility: hidden;
+        }
+        #check:checked ~ label #btn{
+            margin-left: 245px;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #check:checked ~ label #cancel{
+            margin-left: 245px;
+            opacity: 1;
+            visibility: visible;}
+            #check:checked ~ .sidebar{
+                left: 0;
+            }
+            @media (max-width: 860px){
+                .sidebar{
+                    height: auto;
+                    width: 70px;
+                    left: 0;
+                    margin: 100px 0;
+                }
+            }
+            .sidebar a:hover span{
+                opacity: 1;
+                visibility: visible;
+            }
+
+
+    .wrapper
+    {
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        transform: translate(-55%,-55%);
+        width: 550px;
+        display: flex;
+        box-shadow: 0 1px 20px 0 #8FBC8F;
+    }
+    .wrapper .left{
+        width: 40%;
+      background: linear-gradient(to right, rgb(166, 214, 35), #acca24);
+      padding: 20px 25px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+      color: darkred;
+    }
+    .wrapper .left img{
+        margin-bottom: 10px;       
+         border-radius: 5px;
+    }
+    .wrapper .left h4{
+        margin-bottom: 10px;
+    }
+    .wrapper .left p{
+      font-size: 12px;
+  }
+  .wrapper .right{
+        width: 65%; 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 50px 30px;
+ }
+ .wrapper .right .info{
+    margin-bottom: 25px;
+ }
+ .wrapper .right .info h3{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom:  1px solid;
+    text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 5px;
+ }
+ .wrapper .right .info_data{
+    display: block;
+    justify-content: space-between;
+ }
+ .wrapper .right .info_data .data{
+    width: 60%;
+ }
+ .wrapper .right .info_data .data h4{
+    margin-bottom: 5px;
+ }
+ .wrapper .right .info_data .data h4 p{
+    font-size: 13px;
+    margin-bottom: 10px;
+ }
+    .wrapper .social_media ul{
+     display: flex;   
+ }
+ .wrapper .social_media ul li{
+     width: 45px;
+     height: 45px;
+     background: linear-gradient(to right, rgb(166, 214, 35), #acca24);
+     margin-right: 10px;
+     border-radius: 15px;
+     line-height: 45px;
+     text-align: center; 
+ }
+ .wrapper .social_media ul li a{
+     color: red;
+     display: block;
+     font-size: 18px;
+ }
+ .insta:hover{
+    color:color:rgb(255, 70, 101);
+    transform: scale(1.5,1.5);
+}
+ 
+.whatsapp:hover{
+    color:rgb(0, 0, 0);
+    transform: scale(1.5,1.5);
+}
+ 
+.link:hover{
+    color:rgba(4, 0, 253, 0.842);
+    transform: scale(1.5,1.5);
+}
+ 
+.tweet:hover{
+    color:rgb(4, 0, 255);
+    transform: scale(1.5,1.5);
+}

@@ -1,0 +1,60 @@
+file:///C:/Users/Vartika/Desktop/more_about_me.html
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	background: white;
+	background-size: cover;
+background-position: center;
+}
+.container{
+	height: 80vh;
+	width: 30%;
+	background: darkolivegreen;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+.img{
+	height: 70px;
+	width: 70px;
+	background: url("vartika.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 100%;
+}
+.container h1{
+	color: white;
+	margin-top: 50px;
+}
+.container p{
+	color: white;
+font-size: large;
+margin-top: 50px;
+}
+.btn{
+	background: no-repeat;
+	outline: none;
+	border: 1px solic black;
+	color: black;
+	width: 50%;
+	margin-top: 50px;
+	padding: 7px 15px;
+	font-size: large;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+.btn:hover{
+		background: white;
+
+}
